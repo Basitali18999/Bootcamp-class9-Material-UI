@@ -1,27 +1,23 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Paper, TextField, Button, Link, } from '@material-ui/core';
-
-
+import { Paper, TextField, Button, Link, } from '@material-ui/core'
 
 
 const useStyles = makeStyles((theme) => ({
+    
     root: {
-        
+
         height: '600px',
         display: 'flex',
         backgroundColor: '#f0f2f5',
         flexWrap: 'wrap',
-        
-        
 
-        
     },
+    
     paper: {
-        
+
         height: '430px',
         width: '400px',
-        
         marginLeft: '60px',
         borderRadius: '10px',
         fontSize: '20px',
@@ -29,11 +25,14 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'center',
         letterSpacing: '-1px',
     },
+    
     textInput: {
 
         width: '350px',
     },
+    
     added: {
+        
         color: 'RGB(66,103,250)',
         paddingTop: '120px',
         paddingRight: '25px',
@@ -42,17 +41,17 @@ const useStyles = makeStyles((theme) => ({
         marginTop: '50px',
         lineHeight: '5px',
         letterSpacing: '-4px',
-
     },
+    
     add: {
+        
         width: '500px',
-        paddingLeft: '200px',        
+        paddingLeft: '200px',
         fontFamily: 'sans-serif',
         fontSize: '27px',
         fontWeight: 'lighter',
-        
-
     },
+   
     button: {
 
         fontSize: '20px',
@@ -61,8 +60,8 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: 'RGB(66,103,250)',
         color: 'white',
         textTransform: 'inherit',
-
     },
+    
     button1: {
         textTransform: 'inherit',
         height: '47px',
@@ -77,6 +76,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function SimplePaper() {
+    
     const classes = useStyles();
 
     return (
@@ -98,7 +98,7 @@ function SimplePaper() {
                 <Button variant="contained" color="primary" className={classes.button}>
                     Log In
                 </Button>
-                <br/>
+                <br />
                 <Link
                     classN
                     component="button"
@@ -109,16 +109,14 @@ function SimplePaper() {
                 >
                     Forgotten Password?
                 </Link>
-                <br/>
-                <br/>
-                
-                <Button variant="contained"  className={classes.button1}>
+                <br />
+                <br />
+
+                <Button variant="contained" className={classes.button1}>
                     Create New Account
                 </Button>
 
-
             </Paper>
-
 
         </div>
     );
